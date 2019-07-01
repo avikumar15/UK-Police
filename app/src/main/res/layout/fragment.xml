@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f38422"
+    android:layout_margin="5dp"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:text="[X]"
+    android:background="#757575"
+    android:padding="3sp"
+    android:textColor="#000000"
+    android:textSize="15sp"
+    android:onClick="CLOSEFRAG"
+    android:id="@+id/CLOSEFRAG"
+    />
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="15sp"
+    android:textColor="#000000"
+    android:layout_marginTop="25sp"
+    android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:text="The app serves the purpose to give details about the police force of UK and also details about various crimes and their current status. The data is collected from the API available on the official site of UK Police : data.police.uk"
+        android:layout_marginBottom="20dp"
+        />
+
+</FrameLayout>

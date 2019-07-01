@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationSearch"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#01001e"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="3sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="[?]"
+            android:background="#757575"
+            android:id="@+id/questionmark2"
+            android:onClick="DetailApp2"
+            />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/backbutton"
+        android:id="@+id/backfromloc"
+        android:onClick="backfromloc"
+        android:background="#79BAEC"
+        android:padding="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter latitude and longitude"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:weightSum="2"
+            android:backgroundTint="#7872d3"
+            >
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="7.5dp"
+                android:hint="Latitude"
+                android:id="@+id/lat"
+                android:textColorHint="#FFFFFF"
+                android:inputType="numberDecimal|numberSigned"
+                android:backgroundTint="#7872d3"
+                android:textColor="#FFFFFF"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginRight="15dp"
+                android:hint="Longitude"
+                android:textColorHint="#FFFFFF"
+                android:id="@+id/longg"
+                android:backgroundTint="#7872d3"
+                android:textColor="#FFFFFF"
+                android:inputType="numberDecimal|numberSigned"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select year and month"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:weightSum="2"
+                >
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/MONTHSPIN"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_back"
+                android:scrollbars="vertical"
+                android:spinnerMode="dropdown"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/YEARSPIN"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:scrollbars="vertical"
+                android:background="@drawable/spinner_back"
+                android:spinnerMode="dropdown"
+                />
+
+            </LinearLayout>
+
+            <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:id="@+id/searchbyloc"
+            android:onClick="searchloc"
+            android:background="#C0C0C0"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B33A3A"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="INVALID INPUT"
+            android:padding="8sp"
+            android:background="#ff7f7f"
+            android:id="@+id/errormsg"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:text="The latitude range of UK is 50.1 to 60.1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:text="The longitude range of UK is -7.6 to 1.7"
+            />
+</LinearLayout>
+</LinearLayout>

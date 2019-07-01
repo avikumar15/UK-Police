@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DepartementDetails"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#000"
+    >
+<ImageView
+    android:layout_width="55dp"
+    android:layout_height="55dp"
+    android:src="@drawable/backbutton"
+    android:id="@+id/backfromspec"
+    android:onClick="backfromspec"
+    android:background="#79BAEC"
+    android:padding="5dp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#fffdad"
+        android:text="ID - "
+        android:id="@+id/tex"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="18dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NAMEIT"
+        android:textColor="#fffdad"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="18sp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="NAME - "
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#3B3131"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:textSize="18sp"
+        android:id="@+id/DESC"
+        android:text="Loading data..."
+        />
+    </ScrollView>
+</LinearLayout>

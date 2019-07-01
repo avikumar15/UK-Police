@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".CrimeListLocation"
+    android:weightSum="10"
+    android:padding="5dp"
+    android:background="#01001e"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/backbutton"
+            android:id="@+id/backtolocsearch"
+            android:onClick="backtolocsearch"
+            android:background="#79BAEC"
+            android:padding="5dp"
+            />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginLeft="-27.5dp"
+        android:textColor="#FFFFFF"
+        android:text="CRIME RECORD"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude - "
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textlat"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude - "
+        android:layout_marginTop="0dp"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textlong"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record for "
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/DATE"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right swipe to Add and left swipe to Remove"
+        android:layout_marginTop="0dp"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:scrollbars="vertical"
+        android:layout_marginTop="15dp"
+        android:id="@+id/CRIMELIST"
+        android:backgroundTint="#01001e"
+        >
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

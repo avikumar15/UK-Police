@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:paddingTop="1dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:id="@+id/THEBESTID"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        >
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:textColor="#FFF"
+            android:layout_gravity="end"
+            android:background="#000"
+            android:text="MORE DETAILS"
+            android:id="@+id/FurtherDetails"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            />
+    <ImageView
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:textColor="#000"
+        android:layout_gravity="end"
+        android:src="@drawable/star_white"
+        android:id="@+id/star"
+        android:gravity="center"
+        />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:text="Persistent ID - "
+        android:id="@+id/iwillbethereforyou"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:text="ID is here"
+        android:id="@+id/persistent"
+        />
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:text="Crime Category - "
+        android:id="@+id/category"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:text="Latitude - "
+        android:id="@+id/FINALLAT"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:text="Longitude - "
+        android:id="@+id/FINALLONG"
+        />
+</LinearLayout>

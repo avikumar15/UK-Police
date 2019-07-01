@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavouriteActivity"
+    android:paddingTop="5dp"
+    android:orientation="vertical"
+    android:background="#01001e"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="3sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="[?]"
+            android:background="#757575"
+            android:id="@+id/questionmark3"
+            android:onClick="DetailApp3"
+            />
+
+    </FrameLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="#79BAEC"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/backbutton"
+        android:id="@+id/backfromfav"
+        android:onClick="backfromfav"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:text="Favourite Crimes"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        />
+</RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#7872d3"
+        android:textColorHint="#FFFFFF"
+        android:hint="Search by PID"
+        android:textColor="#FFFFFF"
+        android:id="@+id/searchfav"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFFFFF"
+        android:text="Left swipe to remove"
+        android:gravity="center"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/THEFAVLIST"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
