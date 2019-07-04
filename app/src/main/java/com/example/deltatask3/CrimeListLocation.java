@@ -49,6 +49,9 @@ public class CrimeListLocation extends AppCompatActivity implements CrimeLocatio
 
     public static final String IDD = "NotAgain";
 
+    public static final String LatForMap="No one";
+    public static final String LongForMap="No onex";
+
     List<String> PERSIS = new Vector<String>();
     List<String> CATEG = new Vector<String>();
     List<String> LAT = new Vector<String>();
@@ -192,7 +195,7 @@ public class CrimeListLocation extends AppCompatActivity implements CrimeLocatio
     }
 
     @Override
-    public void onCrimeListClick(String heywassap) {
+    public void onCrimeListClick(String heywassap, String LATI, String LONGI) {
         Intent intint = new Intent(this,CrimeDetail.class);
         intint.putExtra(IDD,heywassap);
         intint.putExtra(jethiya,0);
@@ -201,6 +204,9 @@ public class CrimeListLocation extends AppCompatActivity implements CrimeLocatio
         intint.putExtra(longitude,longitudee);
         intint.putExtra(monthisbest,month);
         intint.putExtra(yearisbest,year);
+
+        intint.putExtra(LatForMap,LATI);
+        intint.putExtra(LongForMap,LONGI);
 
         startActivity(intint);
     }

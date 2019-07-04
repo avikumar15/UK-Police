@@ -21,6 +21,8 @@ import java.util.List;
 import java.util.Vector;
 
 import static com.example.deltatask3.CrimeListLocation.IDD;
+import static com.example.deltatask3.CrimeListLocation.LatForMap;
+import static com.example.deltatask3.CrimeListLocation.LongForMap;
 
 public class FavouriteActivity extends AppCompatActivity implements CrimeLocationAdapter.OnCrimeListInterface{
 
@@ -133,11 +135,13 @@ public class FavouriteActivity extends AppCompatActivity implements CrimeLocatio
     }
 
     @Override
-    public void onCrimeListClick(String heywassap) {
+    public void onCrimeListClick(String heywassap, String hh, String bb) {
         System.out.println("Thank you, next");
         Intent intint = new Intent(this,CrimeDetail.class);
         intint.putExtra(IDD,heywassap);
         intint.putExtra(jethiya,1);
+        intint.putExtra(LatForMap,hh);
+        intint.putExtra(LongForMap,bb);
         startActivity(intint);
     }
 

@@ -193,12 +193,12 @@ public class CrimeLocationAdapter extends RecyclerView.Adapter<CrimeLocationAdap
         @Override
         public void onClick(View v) {
             if(v.getId() == FurtherDetails.getId())
-                onCrimeListInterface.onCrimeListClick(persis.get(getAdapterPosition()));
+                onCrimeListInterface.onCrimeListClick(persis.get(getAdapterPosition()),FINALLAT.get(getAdapterPosition()),FINALLONG.get(getAdapterPosition()));
         }
 
     }
     public interface OnCrimeListInterface{
-        void onCrimeListClick(String heywassap);
+        void onCrimeListClick(String heywassap, String Lat, String Long);
     }
 
     public void searchImplement(List<String> ab, List<String> cd, List<String> ef, List<String> gh)

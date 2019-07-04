@@ -18,6 +18,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 import static com.example.deltatask3.CrimeListLocation.IDD;
+import static com.example.deltatask3.CrimeListLocation.LatForMap;
+import static com.example.deltatask3.CrimeListLocation.LongForMap;
 import static com.example.deltatask3.FavouriteActivity.jethiya;
 import static com.example.deltatask3.LocationSearch.latitude;
 import static com.example.deltatask3.LocationSearch.longitude;
@@ -33,10 +35,15 @@ public class CrimeDetail extends AppCompatActivity {
     float longg,latt;
     int yearr, monthh;
 
+    String Lati,Longi;
+
     String intented;
     ToGetCrimeDetails ttt;
     int klmm=0;
     int choice=99;
+
+    public static final String MapLat = "Khopcha";
+    public static final String MapLong = "Kopca";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +67,14 @@ public class CrimeDetail extends AppCompatActivity {
         monthh=inn.getIntExtra(monthisbest,0);
         yearr=inn.getIntExtra(yearisbest,0);
 
+        Lati = inn.getStringExtra(LatForMap);
+        Longi = inn.getStringExtra(LongForMap);
+
+        Lati = Lati.substring(11);
+        Longi = Longi.substring(12);
+
         System.out.println(longg+" "+latt+" "+monthh+"-"+yearr);
+        System.out.println("Lati and longi inside crimedetail class is "+Lati+"  "+Longi);
 
 
         if(!(intented.equals("Data missing on server.") || intented.equals("Persistence id : ") || intented.equals("") ))
@@ -137,6 +151,15 @@ public class CrimeDetail extends AppCompatActivity {
             inni.putExtra(yearisbest,yearr);
             startActivity(inni);
         }
+    }
+
+    public void StartMap(View view)
+    {
+        Intent intent = new Intent(this,MapsActivity.class);
+        intent.putExtra(MapLat,Float.parseFloat(Lati));
+        intent.putExtra(MapLong,Float.parseFloat(Longi));
+        startActivity(intent);
+
     }
 
 }

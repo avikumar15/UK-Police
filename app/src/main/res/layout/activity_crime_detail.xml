@@ -100,5 +100,33 @@
         android:id="@+id/putstatushere"
         />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
+        android:background="#583bcc"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:textColor="#FFFFFF"
+            android:text="Locate on map"
+            android:padding="5sp"
+            android:background="#583bcc"
+            android:textSize="20sp"
+            />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/googlemap"
+            android:onClick="StartMap"
+            />
 
+
+    </LinearLayout>
 </LinearLayout>
