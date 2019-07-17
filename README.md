@@ -1,7 +1,7 @@
-## UK Police
+# UK Police
 The app shows the data about all the police forces and crimes happening in United Kingdom in an organised manner. The app makes use of the data available on the UK Police website : https://data.police.uk/ and makes API calls to fetch the data. Logo of 
 
-# App Features
+## App Features
 
 1. Search for crime records by entering approximate Latitude, Longitude and the month for which you are looking the data for. If there are crimes for the set data, results will show in form of a recycler list. For making it more user-friendly, the latitude and longitude range of UK is mentioned in this activity.
 
@@ -13,7 +13,7 @@ The app shows the data about all the police forces and crimes happening in Unite
 
 5. Fragments are implemented in the primary activities which show the purpose of the app and data source.
 
-# Things Learnt
+## Things Learnt
 
 1. Implementation of a RecyclerView.
 2. Making API calls using retrofit.
